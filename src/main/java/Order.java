@@ -1,8 +1,8 @@
 import java.time.LocalDate;
 
 public class Order {
-    Book book;
-    LocalDate dateOfOrder;
+    private Book book;
+    private LocalDate dateOfOrder;
 
     public Order(Book book, int year, int month, int day) {
         this.book = book;
@@ -19,6 +19,6 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order: /n" + "book: " + book + "/n dateOfOrder=" + dateOfOrder;
+        return "Order " + "\n"+ book + "\n" + "Date Of Order: " + dateOfOrder + "\n";
     }
 }
