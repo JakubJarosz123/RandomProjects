@@ -1,4 +1,4 @@
-package Small_DB_Books_Films;
+package Small_DB_Books;
 
 import java.util.ArrayList;
 import java.util.Scanner;

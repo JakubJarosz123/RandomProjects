@@ -1,4 +1,4 @@
-package Small_DB_Books_Films;
+package Small_DB_Books;
 
 public class Book {
     private String title;

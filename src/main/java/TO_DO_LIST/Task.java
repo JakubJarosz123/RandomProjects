@@ -1,0 +1,28 @@
+package TO_DO_LIST;
+
+public class Task {
+    private String description;
+    private boolean completed;
+
+    public Task(String description) {
+        this.description = description;
+        this.completed = false;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+     public boolean getCompleted() {
+        return completed;
+     }
+
+     public void markCompleted() {
+        completed = true;
+     }
+
+     @Override
+     public String toString(){
+        return (completed ? "[✔]" : "[ ]") + description;
+     }
+}
