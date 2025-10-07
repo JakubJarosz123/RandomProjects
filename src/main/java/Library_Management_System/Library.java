@@ -15,23 +15,31 @@ public class Library {
     }
 
     public void viewBooks(Book displayInfo){
-        for (Book book : books) {
-            System.out.println(book.displyInfo());
-        }
-    }
-
-    public void findBookById(Book id){
-        if (books.contains(id)){
-            System.out.println("Book ID: " + id);
+        if (books.isEmpty()){
+            System.out.println("No books available");
         }else {
-            System.out.println("Book ID not found");
+            for (Book book : books){
+                book.displayInfo();
+            }
         }
     }
 
-    public void findBookByTitle(String title){
-        if (books.contains(title)){
-            System.out.println("Book Title: " + title);
+    public Book findBookById(int id){
+        for (Book book : books) {
+            if (book.getId() == id) {
+                return book;
+            }
         }
+        return null;
+    }
+
+    public List<Book> findBookByTitle(String title){
+        for (Book book : books) {
+            if (book.getTitle().toLowerCase().contains(title.toLowerCase())) {
+                return books;
+            }
+        }
+        return null;
     }
 
     public void borrowBookById(int bookID) {

@@ -1,4 +1,4 @@
-package Własna_Kolekcja;
+package MY_OWN_COLLECTION;
 
 public class Main {
     public static void main(String[] args) {

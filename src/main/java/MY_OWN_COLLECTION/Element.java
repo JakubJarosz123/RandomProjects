@@ -1,4 +1,4 @@
-package Własna_Kolekcja;
+package MY_OWN_COLLECTION;
 
 public class Element {
     private String value;

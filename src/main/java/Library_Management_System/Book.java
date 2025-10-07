@@ -29,7 +29,7 @@ public class Book {
         return available;
     }
 
-    public String displyInfo(){
+    public String displayInfo(){
         System.out.println("Book ID: " + id);
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
